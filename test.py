@@ -130,4 +130,4 @@ except Exception:
 finally:
     for i in range(100):
         noise=tf.random.normal([1, 128])
-        save(np.array(generator(noise, training=False)),'{i}')
+        save(np.array(generator(noise, training=False)),f"{i}")
